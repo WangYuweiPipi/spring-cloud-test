@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cloud-config-clent
+  cloud:
+    config:
+      name: user
+      profile: dev
+      uri: http://localhost:9000/
+      label: master
