@@ -20,14 +20,18 @@
     </properties>
 
     <dependencies>
+        <!-- 引入config server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
+
+        <!-- 引入eureka client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>

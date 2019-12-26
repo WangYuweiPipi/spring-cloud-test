@@ -8,3 +8,12 @@ spring:
           uri: https://github.com/WangYuweiPipi/test-config-repo
           username: WanyYuweiPipi
           password: wyw15280796621
+    bus:
+      trace:
+        enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
