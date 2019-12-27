@@ -16,6 +16,7 @@
         <module>spring-cloud-eureka-feign</module>
         <module>spring-cloud-config</module>
         <module>spring-cloud-config-client</module>
+        <module>spring-cloud-zuul</module>
     </modules>
 
     <name>spring-cloud-test</name>
