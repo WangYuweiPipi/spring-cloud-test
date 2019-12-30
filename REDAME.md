@@ -1,3 +1,5 @@
+- Spring Cloud版本：Finchley.RELEASE
+- Spring Boot版本：2.0.2.RELEASE
 #### Eureka
 用于服务的注册与发现
 ##### Eureka Server 服务注册中心

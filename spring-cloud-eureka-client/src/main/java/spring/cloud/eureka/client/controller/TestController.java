@@ -11,6 +11,6 @@ public class TestController {
 
     @RequestMapping("/test")
     public String test() {
-        return "This is a config";
+        return "This is a eureka client";
     }
 }
