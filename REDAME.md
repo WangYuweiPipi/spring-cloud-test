@@ -20,7 +20,7 @@
 #### Bus
 控制总线
 #### Zuul
-服务网关
+服务网关，主要作用是路由转发和过滤器
 
 ### Module介绍
 ##### spring-cloud-config
@@ -39,6 +39,9 @@
 - Eureka Server Consumer
 - Feign
 - Hystrix
+##### spring-cloud-zuul
+- Eureka Server client
+- Zuul
 
 
 

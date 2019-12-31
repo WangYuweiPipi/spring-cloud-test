@@ -13,6 +13,6 @@ public class TestFeignHystrix implements TestFeign {
     @Override
     @HystrixCommand(fallbackMethod = "")
     public String hello() {
-        return "This is a hystrix for hello method";
+        return "This is a eureka feign hystrix for hello method and port is 8002";
     }
 }

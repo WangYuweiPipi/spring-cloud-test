@@ -11,6 +11,6 @@ public class TestController {
 
     @RequestMapping("/test")
     public String test() {
-        return "This is a eureka client";
+        return "This is a eureka client that port is 8001";
     }
 }

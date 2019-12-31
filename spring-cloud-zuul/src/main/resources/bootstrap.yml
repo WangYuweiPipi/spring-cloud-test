@@ -10,7 +10,10 @@ eureka:
       defaultZone: http://localhost:8000/eureka/
 zuul:
   routes:
-    # 所有/eureka-client开头的api都转发至application name为eureka-client的服务里
+    # 路由转发，所有/eureka-client开头的api都转发至application name为eureka-client的服务里
     eureka-client:
       path: /eureka-client/**
       serviceId: eureka-client
+    eureka-feign:
+      path: /eureka-feign/**
+      serviceId: eureka-feign
