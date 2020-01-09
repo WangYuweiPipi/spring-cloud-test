@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @author pipi
  */
-@FeignClient(name = "eureka-client", fallback = TestFeignHystrix.class)
+@FeignClient(name = "eureka-client", /*fallback = TestFeignHystrix.class,*/ fallbackFactory = TestFeignFallbackFactory.class)
 public interface TestFeign {
 
     /**
