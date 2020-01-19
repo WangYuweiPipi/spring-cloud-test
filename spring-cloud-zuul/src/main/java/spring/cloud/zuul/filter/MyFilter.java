@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
+
 @Component
 public class MyFilter extends ZuulFilter {
 
@@ -18,13 +20,13 @@ public class MyFilter extends ZuulFilter {
      * filter类型
      *
      * 'pre': 在请求被路由之前执行。可以实现身份验证、在集群中选择请求的微服务、记录调试信息等
-     * 'routing: 将请求路由到微服务时执行。用于构建发送给微服务的请求，并使用Apache HttpClient或Netfilx Ribbon请求微服务
+     * 'route: 将请求路由到微服务时执行。用于构建发送给微服务的请求，并使用Apache HttpClient或Netfilx Ribbon请求微服务
      * 'post': 在请求路由到微服务后执行。可用来为响应添加标准的HTTP Header、收集统计信息和指标、将响应从微服务发送给客户端等
      * 'error': 其他阶段发生错误时执行。
      */
     @Override
     public String filterType() {
-        return "pre";
+        return PRE_TYPE;
     }
 
     /**

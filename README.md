@@ -18,7 +18,7 @@
 #### Config
 分布式系统的配置管理
 #### Bus
-控制总线
+控制总线。可重新读取配置文件(http://ip:port/actuator/bus-refresh 刷新配置文件)
 #### Zuul
 服务网关，主要作用是路由转发和过滤器
 
@@ -29,7 +29,7 @@
 ##### spring-cloud-config-client
 - Config Client
 - Eureka Client
-- Bus + RabbitMQ
+- Bus + RabbitMQ（@RefreshScope）
 ##### spring-cloud-eureka
 - Eureka Server
 ##### spring-cloud-eureka-client
